@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+
+    <style>
+
+.styled-paragraph {
+    color: #6809d4;
+
+    font-size: 18px;
+    line-height: 1.6;
+    background-color: #1bc4ee;
+    padding: 10px;
+    border-left: 5px solid #0b1318;
+    border-radius: 4px;
+}
+.H1{
+    background-color: #1bc4ee;
+    color: #e74c3c; /* Text color (red) */
+    text-decoration: underline; /* Adds an underline */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 3px;
+    text-align: center;
+
+}
+body {
+    background-image: linear-gradient(to right, red,yellow);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.btn{
+    box-shadow: 2px,1px,3px,3px red;
+}
+.box {
+    width: 200px;
+    height: 150px;
+    background-color: #f39c12;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5); /* Adds a shadow */
+}
+.filtered-box {
+    width: 300px;
+    height: 200px;
+    background-image: url('background.jpg');
+    background-size: cover;
+    filter: sepia(100%) contrast(1.3) hue-rotate(90deg) blur(2px);
+}
+.filtered-image {
+    filter: brightness(1.2) contrast(1.5) saturate(1.8);
+    width: 300px; /* Set image width */
+    height: auto;
+}
+.filtered-image:hover {
+    filter: blur(5px) grayscale(100%);
+    transition: 0.3s ease-in-out; /* Smooth transition */
+}
+ul {
+    list-style-type: square; /* Use square bullets */
+    padding: 20px; /* Adds padding inside the list */
+    margin: 0; /* Removes default margin */
+    color: #2c3e50; /* Sets text color */
+    list-style-type: disc; /* Sets bullet type */
+    list-style-position: outside; /* Default position */
+    padding: 0;
+}
+
+ol {
+    list-style-type: upper-alpha; /* Use letters (A, B, C) for numbering */
+    padding-left: 20px; /* Adds padding on the left */
+    list-style-type: decimal;
+}
+
+dl {
+    margin: 20px 0; /* Adds margin above and below */
+}
+
+dt {
+    font-weight: bold; /* Makes the term bold */
+}
+
+dd {
+    margin-left: 20px; /* Indents the description */
+}
+.static-box {
+    background-color: lightblue;
+    padding: 20px;
+}
+
+.relative-box {
+    background-color: lightgreen;
+    position: relative;
+    top: 20px; /* Moves down 20px from its original position */
+    left: 20px; /* Moves right 20px from its original position */
+    padding: 20px;
+}
+
+.absolute-box {
+    background-color: lightcoral;
+    position: absolute;
+    top: 100px; /* Positions 100px from the top of its nearest positioned ancestor */
+    left: 100px; /* Positions 100px from the left */
+    padding: 20px;
+}
+
+.fixed-box {
+    background-color: lightsalmon;
+    position: fixed;
+    top: 0; /* Stays at the top of the viewport */
+    right: 0; /* Stays at the right of the viewport */
+    padding: 20px;
+}
+
+.sticky-box {
+    background-color: lightyellow;
+    position: sticky;
+    top: 0; /* Becomes fixed when it reaches the top of the viewport */
+    padding: 20px;
+}
+.box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    width: 300px;
+    height: 100px;
+}
+
+.visible {
+    overflow: visible; /* Content is visible outside the box */
+    background-color: lightgreen;
+}
+
+.hidden {
+    overflow: hidden; /* Content is clipped and hidden */
+    background-color: lightcoral;
+}
+
+.scroll {
+    overflow: scroll; /* Scrollbars appear */
+    background-color: lightblue;
+}
+
+.auto {
+    overflow: auto; /* Scrollbars appear if needed */
+    background-color: lightyellow;
+}
+.content {
+    position: relative; /* Ensures the pseudo-elements are positioned correctly */
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.content::before {
+    content: "Note: "; /* Adds text before the content */
+    color: red; /* Styles the text */
+    font-weight: bold; /* Makes it bold */
+}
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    border-radius: 10px;
+    transition: background-color 0.5s ease, transform 0.5s ease; /* Define transition for color and transformation */
+}
+
+.box:hover {
+    background-color: red; /* Change color on hover */
+    transform: scale(1.2); /* Scale up the box on hover */
+}
+
+
+    </style>
+</head>
+<body>
+
+
+    // paragraph tag
+    <p class="styled-paragraph">This is a simple paragraph styled with CSS. You ca size, and more!</p>
+
+
+
+    //heading tag
+    <h1 class="H1">this is heading for specific purpose</h1>
+
+
+    // change body colour 
+
+
+    //box text-shadow
+    <button class="box">
+
+thanks for all 
+    </button>
+    
+    
+    
+    
+    
+    // filter in css
+    <div class="filtered-box"> this div for use the filter </div>
+   
+    <img src="https://images.olx.com.pk/thumbnails/425485631-240x180.webp" alt="Sample Image" class="filtered-image">
+
+// list property
+<h2>Unordered List</h2>
+<ul>
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Cherry</li>
+</ul>
+
+<h2>Ordered List</h2>
+<ol>
+    <li>First Item</li>
+    <li>Second Item</li>
+    <li>Third Item</li>
+</ol>
+
+<h2>Description List</h2>
+<dl>
+    <dt>HTML</dt>
+    <dd>HyperText Markup Language</dd>
+    <dt>CSS</dt>
+    <dd>Cascading Style Sheets</dd>
+</dl>
+<div class="static-box"> the Static Box</div>
+
+
+
+
+<div class="relative-box">the Relative Box</div>
+
+
+
+<div class="absolute-box"> the Absolute Box</div>
+
+
+<div class="fixed-box"> the Fixed Box</div>
+
+
+
+
+
+
+
+<div class="sticky-box">the Sticky Box</div>
+
+
+
+
+// overflow
+<h2>Overflow Example</h2>
+<div class="box visible">
+    <h3>Visible Overflow</h3>
+    <p>This content will overflow and be visible outside the box.</p>
+</div>
+<div class="box hidden">
+    <h3>Hidden Overflow</h3>
+    <p>This content will overflow and be hidden. Only part of this text will be visible.</p>
+</div>
+<div class="box scroll">
+    <h3>Scroll Overflow</h3>
+    <p>This content will overflow and will add scrollbars for viewing more content.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet accumsan arcu. Mauris vehicula, nunc vel malesuada consectetur, nisi magna tincidunt libero, ac bibendum nunc massa a velit. Cras id magna at justo lacinia venenatis.</p>
+</div>
+<div class="box auto">
+    <h3>Auto Overflow</h3>
+    <p>This content may overflow and will add scrollbars as needed.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet accumsan arcu. Mauris vehicula, nunc vel malesuada consectetur, nisi magna tincidunt libero, ac bibendum nunc massa a velit.</p>
+</div>
+
+
+
+
+
+//pseudo element
+<h1>Welcome to My Website</h1>
+    <p class="content">This is a sample paragraph demonstrating the use of pseudo-elements.</p>
+
+
+
+
+    //transition in 
+    <div class="box">hry coding </div>
+</body>
+</html>
