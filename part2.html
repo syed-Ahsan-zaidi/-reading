@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let da=new Date();
+        console.log(da);
+        let n=new Date(2019,11,18);
+        console.log(n);
+
+        let dt = n.getDate();
+        console.log("it s date today",dt);
+        let m = n.getMonth();
+        console.log("it s month today",m);
+        let yt = n.getFullYear();
+        console.log("it s year today",yt);
+        //
+        var x=[1,3,2,4,5,6,78];
+        console.log(x);
+        //rechange
+        x[1]=55;
+        console.log(x);
+        //deleted
+        delete x[2];
+        console.log(x)
+         // math method
+         var a=Math.ceil(23.4);
+        var a=Math.floor(23.4); 
+        console.log(a);
+        //date method
+        
+        var mod=new Date();
+
+        console.log(mod.getFullYear());
+        //dom document object method
+        ///document.getElementById()
+       // document.getElementsByClassName()
+      /// document.getElementsByTagName()
+      /* var a=["aaa","bbb","ccc",12,13,14,15,16];
+        console.log(a);
+        var b=a.filter(checkAdult);
+        console.log(b);
+        function checkAdult(a){
+            return a>=12;
+        }*/
+        //to string
+       /* var a=[12,13,14,15,16];
+        console.log(a);
+        var b=a.toString();
+        console.log(b);*/
+        //valueof,fil
+        var a=[12,13,14,15,16];
+        console.log(a);
+        var b=a.fill(14);
+        console.log(b);
+         //indexof,lastindexof
+      /*  var a=["a","b","c","d"];
+        console.log(a);
+        var b=a.indexOf("c");
+        console.log(b);
+        var c=a.lastIndexOf("c",0);
+        console.log(c);*/
+        //it include 
+        var d=["a","b","c",4,5,6];
+        console.log(d);
+        var g=d.includes(10);
+        console.log(g);
+        
+    let nav=document.getElementById('nav');
+     console.log(nav);
+     let sel = document.querySelector('.container');
+     console.log("return selector" ,sel)
+
+        //nested loops
+        for(var a=1;a<=100;a=a+10){
+            for(var b=a;b<a+10;b++){
+                console.log(b);
+            }
+            console.log("<br>");
+        }
+         //some 
+       /* var s=[12,13,14,15,16];
+        console.log(s);
+        var a=s.some(CheckAdult);
+        console.log(a);
+        function CheckAdult(s){
+            return s=>14;}*/
+            function num()
+    {
+    var n;
+    n=parseInt(document.getElementById("v").values);
+    if(n<10){
+    window.alert("positive");
+    }
+    else{
+        window.alert("nagivtive");
+    }}
+            //every,find,findindex
+            var ab=[21,31,12,1,14];
+        console.log(ab);
+        var b=ab.findIndex(CheckAdult);
+        console.log(b);
+        function CheckAdult(ab)
+        {
+            return ab<=14;
+        }
+        var a=["ziul","tissu","xax","string"];
+        console.log(a);
+        a.sort();
+        console.log(a);
+        a.reverse();
+        console.log(a);
+        a.pop();
+        console.log(a);
+        a.push("ahsed");
+        console.log(a);
+          //arrays;
+       var a=[12,45,78,"tyre"];
+        console.log(a);
+        // multi arrays
+        var b=[
+            [6,8,4,7],[678,876,8888],["tyredg"]
+        ];
+        for(c=0;c<4;c++){
+            for(d=0;d<4;d++){
+console.log(b  );
+            }
+            
+            console.log(+"<br>");
+        }
+        console.log(b[0]);
+        //
+        /*for(var c=1;c<=5;c++){
+            for(d=1;d<c;d++){
+                console.log(d);
+            }
+        }*/
+         // get and set method innerhtml,innertext,attribute,queryselector,queryselectorall,
+        //get
+       // var a=Document.getelementbyid('header').innerhtml;
+       //set
+       //var a=Document.getelementbyid('header').innerhtml="<h1>wpp</h1>";
+       //css style method style,classname,classlist
+       //var a=Document.getelementbyid('header').innerhtml.style.background="green";
+        //addeventlistner.style.background="green".addeventlistner("click",function(abc){
+          //  alert('asde');
+        //});
+      // console.log(a);
+       //var a=Document.getelementbyid('header').children;
+       //var a=Document.getelementbyid('header').childnode; 
+      //var a=Document.getelementbyid('header').parentelement;
+      //var a=Document.getelementbyid('header').parentnodes;
+      //var a=Document.getelementbyid('header').firstchild; 
+      //var a=Document.getelementbyid('header').lastchild;
+       //class list add,remove,toggle
+      // var a=Document.getelementbyid('header').classslist.add("axt art");
+     /* function backfunction(){
+        history.back();
+      }
+      function forwardfunction(){
+        history.forward();
+      }*/
+      //   var a=["sasta","rao",123,31];
+      //  console.log(a);
+        //shifting 
+      //  a.shift();
+       //console.log(a);
+      //unshifting
+       // a.unshift("sasta");
+       // console.log(a);
+       //concate
+       //var a=["sasta","rao",123,31];
+      // var b=["asad"];
+       //var c=
+       //console.log(a);
+      // console.log(b);
+      // var c=a.concat(b);
+      // console.log(c);
+      //join arrays
+      var a=["sasta","rao",123,31];
+      var b=["asad"];
+      var c;
+      console.log(a);
+      console.log(b);
+
+      var c=a.join(b);
+      console.log(c +"<br>");
+  //arrays;
+  var a=[12,45,78,"tyre"];
+        console.log(a);
+        // multi arrays
+        var b=[
+            [6,8,4,7],[678,876,8888],["tyredg"]
+        ];
+        for(c=0;c<4;c++){
+            for(d=0;d<4;d++){
+console.log(b );
+            }
+            
+            console.log(+"<br>");
+        }
+        console.log(b[0]);
+        ahsan=()=>{
+            console.log("dog, cat ,monkey")
+        }
+        ahsan();
+        ahsan=()=>{
+            console.log("key of success that our not approach")
+        }
+        ahsan();
+        setTimeout(() => {
+            console.log("hello");
+        }, 3000);
+        mul=(a,b)=>{
+return a*b;
+        }
+    </script>
+</body>
+</html>
