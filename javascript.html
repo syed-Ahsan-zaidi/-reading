@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     #btn{
+        padding:45px ,56px;
+        margin: 45px,78px;
+        background-color: aqua;
+        border-radius: 3px;
+        border-color: 67px solid brown;
+        cursor: pointer;
+        }
+</style>
+<body>
+  
+    <div class="container">
+
+    
+    <h1>it is heading</h1>
+<p id="para">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam iure odio quae.YYYY
+</p>
+    
+ </div>
+
+    <script>
+         
+        
+        //  global variable
+        var c="yahoo";
+        function s(){
+            console.log(c)
+        }
+        
+        
+        //it  local variable
+        function l(){
+            var r="abc";
+            console.log(r);
+        }
+        l();
+        console.log("hello");
+        //three type of variables let,var,const;
+        var a=3444;
+        let A=45677;
+        
+        a="fret ";
+        a=9887;
+      
+        console.log(a);
+        console.log(A);
+        //if statement
+        
+       var a=13;
+        if(a>=6){
+            console.log("a is greater then");
+        }
+        //if else statement
+        var a=5;
+        var b=8;
+        if (a>b){
+            console.log("a is greater");
+        }
+        else{
+            console.log("a is small")
+        }
+        // logical operator && is and,! is not,|| is or operator
+        var x=85;
+        var y=45;
+        if(x>80&&y>50){
+            console.log("good");
+        }
+        else{
+            console.log("fail");
+        }
+       // not operator
+       var w=8;
+       if(w>4){
+console.log(w>4);
+       }else{
+        console.log("failed");
+       } 
+        // do while loops
+        var a=1;
+        do{
+            console.log("hey");
+            a=a+1;
+        }while(a<=15);
+        // for loops
+        for(var b=1;b<=26;b++){
+            console.log("hell");
+        }
+        //break and continue statement
+        for(c=1;c<=12;c++){
+            if(c==5){
+                console.log("fert");
+                break;
+            }
+            console.log("number"+a);
+        }
+        // even and add number
+        for(d=1;d<=13;d++){
+            if(d%2==1){
+                console.log("number"+d+"<br>")
+            }
+        }
+         // it is alert box
+        /*var a=10;
+        if(a>1){
+            alert("a is good");
+        }else{
+            alert("a is failed");
+        }*/
+       //it is confirm mation box
+        /*var a=confirm("hey" );
+        if(a){
+         alert("thanks");
+        }else{
+            alert("fail");
+        }*/
+    /*  var a=prompt("what is your name" );
+       if(a){
+        alert("tanks");
+       } else{
+        alert("fail");
+       }*/
+       //ternary operator,else if ,switch :
+var a=58;
+var b;
+b=(a>=20&&a<100)? "true":"false";
+console.log(b);
+var t=2;
+if(t>3){
+    console.log("triue");
+}else if(t>1){
+    console.log("good");
+}else{
+    console.log("failll");
+}
+var age=79;
+switch(true){
+case (age<=5 && age>=10):
+    console.log("under 10");
+    break;
+    case (age>10&&age<60):
+        console.log("under 60");
+        break;
+        case (age>60&&age<80):
+            console.log("under 80");
+            break;
+            default:
+                console.log("try");
+}
+var x="gf";
+        
+        console.log(x);
+        console.log(typeof x);
+        var y=45;
+        console.log(y);
+        console.log(typeof y);
+       var t=true;
+        console.log(t);
+        console.log(typeof t); 
+        var i={
+            s:"ttt",t:"tr"
+
+        };
+        console.log(i);
+        console.log(typeof i);
+        l=["tyjg","hobhon"];
+        console.log(l);
+        console.log(typeof l);
+         //arithmatic operator
+         var a=6;
+          var b=2;
+          var c=a+b;
+          console.log(c);
+          var a=6;
+          var b=2;
+          var c=a*b;
+          console.log(c);
+           var a=6;
+          var b=2;
+          var c=a/b;
+          console.log(c);
+          var a=6;
+          var b=2;
+          var c=a-b;
+          console.log(c);
+          var a=6;
+          var b=2;
+          a++;
+          var c=a+b;
+          console.log(c);
+        var a=6;
+         var b=2;
+          a--;
+         var c=a+b;
+          
+         console.log(c);
+         //assign operator
+        var a=4;
+        var b=2;
+       a -= b;
+       console.log(a);
+        //event perform
+       // function a(){
+       //     alert("yaahooo");
+       // }
+        //while loop
+      //  var p= 13;
+       // while(p>=1){
+//console.log("yahooo");
+       // p=p+1;
+       // }
+        //function
+        function a(){
+            console.log("i  dil pakistan");
+        }
+        a();
+     //function and parameter
+        function s(a,b){
+            console.log( a+b);
+        }
+        s(85,5);
+        //while loop
+       // var p= 13;
+       // while(p>=1){
+       //     console.log("yahooo");
+        //    p++;
+       // }
+        
+
+    </script>
+</body>
+
+</html>
